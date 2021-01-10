@@ -63,11 +63,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function      format          argument */
-  { netspeed_rx,   "  %sB/s ",         "enp4s0" },
-  { run_command,   "%s ",           "dwm-volume" },
-  { run_command,   "%s | ",               "dwm-layout" },
-  { temp,          "[ temp %s°C ] ",    "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon1/temp1_input" },
+//  { netspeed_rx,   " %sB/s ",         "enp4s0" },
+  { run_command,   " %s | ",              "dwm-layout" },
+  { run_command,   "%s ",               "dwm-volume" },
+  { temp,          "| [ temp %s°C ] ",  "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon1/temp1_input" },
   { cpu_perc,      "[ cpu %s%% ] ",     NULL },
   { ram_perc,      "[ ram %s%% ] | ",   NULL },
-	{ datetime,      "%s  ",              "%a, %b %d, %Y at %I:%M %p" },
+	{ datetime,      "%s ",               "%a, %b %d at %I:%M %p" },
 };
